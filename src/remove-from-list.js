@@ -31,7 +31,7 @@ const { NotImplementedError } = require('../extensions/index.js');
         if (current.value === k){                
             if (current === head) {
                 head = current.next;
-                previous = current;
+                previous = head;
                 current = current.next;
                 continue;
             } else {
@@ -44,8 +44,8 @@ const { NotImplementedError } = require('../extensions/index.js');
             current = current.next;
         }
     }
-    
-    return head;
+    list = head;
+    return list;
 }
 
 
